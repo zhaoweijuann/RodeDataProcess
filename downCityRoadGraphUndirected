@@ -7,7 +7,7 @@ place_name = "Beijing, China"
 G = ox.graph.graph_from_place(place_name, network_type='drive', simplify=False)
 
 # 指定保存的文件路径和文件名（记得添加文件名的扩展名 .gpkg）C:\Users\xz\Desktop
-filepath = "C:/Users/xz/Desktop/Beijing.gpkg"
+filepath = ""
 
 # 将道路网络图保存为 Geopackage 文件
 ox.io.save_graph_geopackage(G, filepath=filepath, encoding='utf-8', directed=False)
